@@ -9,7 +9,7 @@ class FormSubmit{
         }
     }
 
-    displaySucess(){
+    displaySuccess(){
         this.form.innerHTML = this.settings.sucess;
     }
 
@@ -34,16 +34,16 @@ class FormSubmit{
 //         throw new Error(error);
 //     }
 // }
-    init(){
-        if (this.form) this.buttonforms.addEventListener("click", () => this.displaySucess());
-        return this;
-    }
+    // init(){
+    //     if (this.form) this.buttonforms.addEventListener("click", () => this.displaySucess());
+    //     return this;
+    // }
 }
 
 const FormSubmit = new FormSubmit({
     form: "[data-form]",
     button: "[data-button]",
-    Sucess: "<h1 class='success'>Mensagem enviada!</h1>",
+    Success: "<h1 class='success'>Mensagem enviada!</h1>",
     Error: "<H1 class='error'> Não foi possível enviar sua mensagem. </h1>",
 });
 
