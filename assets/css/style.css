@@ -263,6 +263,8 @@ h1, h2, h3, h4, h5, h6 {
   .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
+
+  
 }
 
 /**
@@ -832,8 +834,7 @@ section {
 # Services
 --------------------------------------------------------------*/
 .row.servicos {
-  justify-content: center; /* espaço igual entre os blocos */
-  padding: 20px;
+  justify-content: center; 
 }
 
 .services .icon-box {
@@ -874,12 +875,12 @@ section {
   transform: translateY(-10px);
 }
 
-.services .icon-box:hover h4 a {
-  color: #1f1a9d;
-}
-
 .servicos{
 	margin-top: 15px;
+}
+
+.services .icon-box:hover h4 a {
+  color: #1f1a9d;
 }
 
 /*--------------------------------------------------------------
@@ -924,6 +925,7 @@ section {
   .cta {
     background-attachment: scroll;
   }
+  
 }
 
 @media (min-width: 769px) {
@@ -1310,6 +1312,10 @@ section {
     max-width: 100%;
     margin: 0 auto 30px auto;
   }
+  
+  .servicos{
+	margin-top: 0px;
+}
 }
 
 /*--------------------------------------------------------------
